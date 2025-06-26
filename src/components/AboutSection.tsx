@@ -46,7 +46,7 @@ const AboutSection = () => {
           <div className="space-y-4">
             <div className="relative overflow-hidden rounded-2xl shadow-lg">
               <img 
-                src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&fit=crop&w=800&q=80"
+                src="public\images\104412078_3573516486009432_4953368956066748775_n.avif"
                 alt="Intérieur du gîte - Salon chaleureux"
                 className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
               />
