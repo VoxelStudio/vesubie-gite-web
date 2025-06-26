@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -39,7 +38,7 @@ const BookingSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Booking Form */}
-          <Card className="bg-white/95 backdrop-blur-sm border-0 shadow-xl">
+          <Card className="bg-cream backdrop-blur-sm border-0 shadow-xl">
             <CardHeader>
               <CardTitle className="text-2xl font-playfair text-sapin flex items-center">
                 <Calendar className="mr-3 text-glacier" size={28} />
@@ -58,7 +57,7 @@ const BookingSection = () => {
                       type="date"
                       value={checkIn}
                       onChange={(e) => setCheckIn(e.target.value)}
-                      className="border-beige-warm focus:border-glacier"
+                      className="border-beige-warm focus:border-glacier bg-white"
                       required
                     />
                   </div>
@@ -71,7 +70,7 @@ const BookingSection = () => {
                       type="date"
                       value={checkOut}
                       onChange={(e) => setCheckOut(e.target.value)}
-                      className="border-beige-warm focus:border-glacier"
+                      className="border-beige-warm focus:border-glacier bg-white"
                       required
                     />
                   </div>
@@ -85,7 +84,7 @@ const BookingSection = () => {
                     id="guests"
                     value={guests}
                     onChange={(e) => setGuests(e.target.value)}
-                    className="w-full p-3 border border-beige-warm rounded-lg focus:border-glacier focus:outline-none"
+                    className="w-full p-3 border border-beige-warm rounded-lg focus:border-glacier focus:outline-none bg-white"
                     required
                   >
                     <option value="1">1 personne</option>
@@ -116,23 +115,21 @@ const BookingSection = () => {
             {/* Tarifs */}
             <div>
               <h3 className="text-2xl font-playfair font-semibold mb-6 text-center">
-                Nos tarifs 2024
+                Nos tarifs 2025
               </h3>
               <div className="space-y-4">
                 {tarifs.map((tarif, index) => (
-                  <Card key={index} className="bg-white/10 backdrop-blur-sm border-cream/20">
-                    <CardContent className="p-6">
-                      <div className="flex justify-between items-center">
-                        <div>
-                          <h4 className="font-semibold text-lg">{tarif.periode}</h4>
-                          <p className="text-cream/80 text-sm">{tarif.description}</p>
-                        </div>
-                        <div className="text-right">
-                          <span className="text-2xl font-playfair font-bold text-glacier">
-                            {tarif.prix}
-                          </span>
-                          <p className="text-sm text-cream/80">par nuit</p>
-                        </div>
+                  <Card key={index} className="bg-cream border-sapin/20 border shadow-lg">
+                    <CardContent className="p-6 flex justify-between items-center">
+                      <div>
+                        <h4 className="font-semibold text-lg text-sapin">{tarif.periode}</h4>
+                        <p className="text-sapin/80 text-sm">{tarif.description}</p>
+                      </div>
+                      <div className="text-right">
+                        <span className="text-2xl font-playfair font-bold text-glacier">
+                          {tarif.prix}
+                        </span>
+                        <p className="text-sm text-sapin/80">par nuit</p>
                       </div>
                     </CardContent>
                   </Card>
@@ -141,19 +138,17 @@ const BookingSection = () => {
             </div>
 
             {/* Contact Direct */}
-            <Card className="bg-glacier/20 backdrop-blur-sm border-glacier/30">
+            <Card className="bg-cream border-sapin/20 border shadow-lg">
               <CardContent className="p-6 text-center">
                 <Phone className="text-glacier mx-auto mb-4" size={32} />
-                <h4 className="font-playfair font-semibold text-xl mb-2">
+                <h4 className="font-playfair font-bold text-xl mb-2 text-sapin">
                   Réservation directe
                 </h4>
-                <p className="text-cream/90 mb-4">
-                  Contactez Sandrine directement pour des conseils personnalisés 
-                  et les meilleures conditions
+                <p className="text-sapin mb-4">
+                  Contactez Sandrine directement pour des conseils personnalisés et les meilleures conditions
                 </p>
                 <Button 
-                  variant="outline" 
-                  className="border-cream text-cream hover:bg-cream hover:text-sapin"
+                  className="w-full bg-cream text-sapin hover:bg-beige-warm hover:text-sapin border-sapin border"
                   onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   Nous contacter

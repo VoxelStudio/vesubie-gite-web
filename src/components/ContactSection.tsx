@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -64,7 +63,7 @@ const ContactSection = () => {
                       name="name"
                       value={formData.name}
                       onChange={handleInputChange}
-                      className="border-beige-warm focus:border-glacier"
+                      className="border-beige-warm focus:border-glacier bg-white"
                       required
                     />
                   </div>
@@ -78,7 +77,7 @@ const ContactSection = () => {
                       type="tel"
                       value={formData.phone}
                       onChange={handleInputChange}
-                      className="border-beige-warm focus:border-glacier"
+                      className="border-beige-warm focus:border-glacier bg-white"
                     />
                   </div>
                 </div>
@@ -93,7 +92,7 @@ const ContactSection = () => {
                     type="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="border-beige-warm focus:border-glacier"
+                    className="border-beige-warm focus:border-glacier bg-white"
                     required
                   />
                 </div>
@@ -108,7 +107,7 @@ const ContactSection = () => {
                     value={formData.message}
                     onChange={handleInputChange}
                     rows={5}
-                    className="border-beige-warm focus:border-glacier resize-none"
+                    className="border-beige-warm focus:border-glacier resize-none bg-white"
                     placeholder="Dates souhaitées, questions sur le gîte, demandes spéciales..."
                     required
                   />
