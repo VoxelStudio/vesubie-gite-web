@@ -46,7 +46,7 @@ const AboutSection = () => {
           <div className="space-y-4">
             <div className="relative overflow-hidden rounded-2xl shadow-lg">
               <img 
-                src="public\images\104412078_3573516486009432_4953368956066748775_n.avif"
+                src="../../images/104412078_3573516486009432_4953368956066748775_n.avif"
                 alt="Intérieur du gîte - Salon chaleureux"
                 className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
               />
@@ -54,14 +54,14 @@ const AboutSection = () => {
             <div className="grid grid-cols-2 gap-4">
               <div className="relative overflow-hidden rounded-xl shadow-md">
                 <img 
-                  src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=400&q=80"
+                  src="../../images/photo_de_couverture_xc0v046.avif"
                   alt="Vue panoramique montagne"
                   className="w-full h-40 object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="relative overflow-hidden rounded-xl shadow-md">
                 <img 
-                  src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=400&q=80"
+                  src="../../images/terrasse_depuis_atelier_2.avif"
                   alt="Nature environnante"
                   className="w-full h-40 object-cover hover:scale-105 transition-transform duration-500"
                 />
